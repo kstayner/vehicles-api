@@ -20,14 +20,9 @@ import modules from './modules/index'
 import { HttpExceptionFilter } from './filters/http_exception.filter'
 import { Module } from '@nestjs/common';
 import { CarModule } from './car/car.module';
-import { MotorcycleModule } from './motorcycle/motorcycle.module';
 
 @Module({
   imports: [CarModule],
-})
-
-@Module({
-  imports: [MotorcycleModule],
 })
 
 @Module({
